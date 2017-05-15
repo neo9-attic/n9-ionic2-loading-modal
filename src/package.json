@@ -1,0 +1,28 @@
+{
+  "name": "n9-ionic2-loading-modal",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/repo"
+  },
+  "author": {
+    "name": "Gaetan SENN",
+    "email": "gaetan.senn@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/repo/issues"
+  },
+  "module": "n9-ionic2-loading-modal.js",
+  "typings": "n9-ionic2-loading-modal.d.ts",
+  "peerDependencies": {
+    "n9-angular2-http-client": "^0.2.0",
+    "ionic-angular": "^3.0.0",
+    "@angular/forms": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

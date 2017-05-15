@@ -1,0 +1,41 @@
+n9-loading-modal .container {
+
+	z-index: -1;
+	transition: z-index 0.2s step-end;
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&.loading {
+		z-index: 9999;
+		transition: z-index 0.2s step-start;
+		.backdrop {
+			opacity: 0.6;
+		}
+	}
+
+	.backdrop {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0.01;
+		transition: opacity 0.2s;
+		background-color: black;
+	}
+
+	ion-spinner {
+		width: 60px;
+		height: 60px;
+
+		& * {
+			fill: white;
+		}
+	}
+}
