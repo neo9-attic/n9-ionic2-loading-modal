@@ -22,7 +22,7 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "n9-ionic2-loading-modal.js",
-    "flatModuleId": "n9-ionic2-loading-modal"
+    "flatModuleId": "@neo9/n9-ionic2-loading-modal"
   },
   "files": [
     "./index.ts"
