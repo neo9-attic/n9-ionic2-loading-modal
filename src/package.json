@@ -19,7 +19,7 @@
   "module": "n9-ionic2-loading-modal.js",
   "typings": "n9-ionic2-loading-modal.d.ts",
   "peerDependencies": {
-    "n9-angular2-http-client": "^0.2.0",
+    "@neo9/n9-angular2-http-client": "^0.2.0",
     "ionic-angular": "^3.0.0",
     "@angular/forms": "^4.0.0",
     "rxjs": "^5.1.0",

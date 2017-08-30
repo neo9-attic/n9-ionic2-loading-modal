@@ -1,5 +1,5 @@
 import { NgModule, ModuleWithProviders, OpaqueToken, Injector } from '@angular/core';
-import { N9HttpClientModule } from 'n9-angular2-http-client';
+import { N9HttpClientModule } from '@neo9/n9-angular2-http-client';
 import { IonicModule } from 'ionic-angular';
 
 import { N9LoadingModalComponent } from './n9-loading-modal.component';
