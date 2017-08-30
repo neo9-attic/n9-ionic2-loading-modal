@@ -1,6 +1,6 @@
 import { Injectable, OpaqueToken, Injector } from "@angular/core";
 
-import { N9HttpClientService } from 'n9-angular2-http-client';
+import { N9HttpClientService } from '@neo9/n9-angular2-http-client';
 
 export interface Loader {
   loading: boolean
