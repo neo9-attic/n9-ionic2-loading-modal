@@ -19,7 +19,7 @@ export class N9LoadingModalService {
       return injector.get(providerToInject);
     });
 
-    if (!providers) providers.push(injector.get(N9HttpClientService));
+    if (!providers.length) providers.push(injector.get(N9HttpClientService));
 
     providers.forEach((client: N9HttpClientService) => {
       this.subscribeClient(client);
