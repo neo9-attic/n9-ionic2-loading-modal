@@ -4,10 +4,13 @@ import { N9LoadingModalService } from "./n9-loading-modal.service";
 @Component({
   selector: 'n9-loading-modal',
   template: `
-		<div class="container" [ngClass]="{ 'loading': loader.loading }">
-			<div class="backdrop"></div>
-			<ion-spinner name="dots"></ion-spinner>
-		</div>
+  <div class="container" [ngClass]="{ 'loading': loader.loading }">
+    <div class="backdrop"></div>
+    <div #ref>
+      <ng-content></ng-content>
+    </div>
+    <ion-spinner *ngIf="ref.children.length == 0" name="dots"></ion-spinner>
+  </div>
 	`,
   styleUrls: [
     'n9-loading-modal.scss'
