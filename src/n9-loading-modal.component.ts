@@ -7,9 +7,9 @@ import { N9LoadingModalService } from "./n9-loading-modal.service";
   <div class="container" [ngClass]="{ 'loading': loader.loading }">
     <div class="backdrop"></div>
     <div #ref>
-      <ng-content></ng-content>
+      <ng-content *ngIf="loader.loading"></ng-content>
     </div>
-    <ion-spinner *ngIf="ref.children.length == 0" name="dots"></ion-spinner>
+    <ion-spinner *ngIf="ref.children.length == 0 && loader.loading" name="dots"></ion-spinner>
   </div>
 	`,
   styleUrls: [
