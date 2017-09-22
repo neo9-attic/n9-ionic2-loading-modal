@@ -1,6 +1,6 @@
 {
   "name": "@neo9/n9-ionic2-loading-modal",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "scripts": {
     "preversion": "npm run lint",
     "version": "npm build",
