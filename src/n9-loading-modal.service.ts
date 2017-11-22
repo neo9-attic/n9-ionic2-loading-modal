@@ -3,7 +3,8 @@ import { Injectable, OpaqueToken, Injector } from "@angular/core";
 import { N9HttpClientService } from '@neo9/n9-angular2-http-client';
 
 export interface Loader {
-  loading: boolean
+  loading: boolean,
+  looked: boolean
 }
 
 @Injectable()
@@ -12,7 +13,8 @@ export class N9LoadingModalService {
 
   constructor(private providersName: OpaqueToken[], private injector: Injector) {
     this.loader = {
-      loading: false
+      loading: false,
+      looked: false
     };
 
     let providers: N9HttpClientService[] = providersName.map((providerToInject) => {
@@ -33,10 +35,18 @@ export class N9LoadingModalService {
   }
 
   show() {
-    this.loader.loading = true;
+    if (!this.loader.looked) this.loader.loading = true;
   }
 
   hide() {
-    this.loader.loading = false;
+    if (!this.loader.looked) this.loader.loading = false;
+  }
+
+  lock() {
+    this.loader.looked = true;
+  }
+
+  unlock() {
+    this.loader.looked = false;
   }
 }
