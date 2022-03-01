@@ -1,4 +1,6 @@
-# n9-angular2-http-client
+# No longer actively maintained
+
+## n9-angular2-http-client
 
 ## Installation
 
